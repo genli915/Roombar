@@ -1,0 +1,24 @@
+global_frame: odom
+rolling_window: true
+track_unknown_space: true
+
+plugins:
+  - {name: obstacles_laser,           type: "costmap_2d::ObstacleLayer"}
+  - {name: inflation,                 type: "costmap_2d::InflationLayer"}
+
+# Burger
+# global_costmap:
+#   global_frame: odom
+#   # robot_base_frame: base_footprint
+#   rolling_window: true
+#   track_unknown_space: true
+#   #
+#   # update_frequency: 4.0
+#   # publish_frequency: 3.0
+#   # transform_tolerance: 0.5
+#
+#   static_map: false
+#
+#   plugins:
+#     - {name: obstacles_laser,           type: "costmap_2d::ObstacleLayer"}
+#     - {name: inflation,                 type: "costmap_2d::InflationLayer"}
